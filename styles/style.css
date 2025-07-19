@@ -242,6 +242,24 @@ main {
   display: grid;
   grid-template-columns: repeat(5, 170px);
   justify-content: space-around;
+  margin-bottom:120px;
+}
+
+/* header section */
+header{
+  background-color: var(--hbg);
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1440px;
+  padding: 15px;
+  border-radius: 8px;
+    margin-bottom: 40px;
+}
+header p{
+  color: var(--dark2);
+  font-size: 1.3rem;
+
+
 }
 /* responsite design with this */
 @media screen and (max-width: 575px) {
@@ -337,7 +355,6 @@ main {
   grid-template-rows: repeat(3,1fr);
   justify-content: center;
   align-items: center;
-  margin-bottom: 140px;
   gap: 10px;
 }
 .sponsor_img div{
