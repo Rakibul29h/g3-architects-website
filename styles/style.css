@@ -226,9 +226,23 @@ main {
   margin: 0;
 }
 /* sponsor section working area */
+.sponsor{
+  flex-direction: column;
+}
+.sponsor_content{
+  text-align: center;
+  margin: 0 auto;
+  width:40%;
+}
 
-
-
+.sponsor_img{
+  width: 100%;
+  margin-top: 50px;
+  filter: grayscale(100%);
+  display: grid;
+  grid-template-columns: repeat(5, 170px);
+  justify-content: space-around;
+}
 /* responsite design with this */
 @media screen and (max-width: 575px) {
   .navbar h3 {
@@ -314,5 +328,23 @@ main {
   width: 100%;
   padding-left: 5px;
 
+}
+.sponsor_content{
+  width:100%;
+}
+.sponsor_img{
+  grid-template-columns: repeat(2, 170px);
+  grid-template-rows: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 140px;
+  gap: 10px;
+}
+.sponsor_img div{
+  display: flex;
+  justify-content: center;
+}
+.sponsor_img div:last-child{
+  grid-column: span 2;
 }
 }
